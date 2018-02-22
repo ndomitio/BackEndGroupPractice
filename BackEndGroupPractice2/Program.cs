@@ -8,6 +8,7 @@ namespace BackEndGroupPractice2
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             BeachDestination NewBeach = new BeachDestination(string.Empty);
@@ -16,11 +17,9 @@ namespace BackEndGroupPractice2
 
             string beachChoice = NewBeach.ChangeEyeColorToInt();
             
-            Console.WriteLine("What size shoe are you?");
+            double ShoeSize1 = double.Parse(Console.ReadLine());
 
-            double userChoice = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("You are going to " + beachChoice + " and staying at the " + MyHotel.HotelPick(userChoice, beachChoice) + " hotel");
+            Console.WriteLine("You are going to " + beachChoice + " and staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel");
 
 
         }

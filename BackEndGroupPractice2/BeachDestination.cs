@@ -30,7 +30,11 @@ namespace BackEndGroupPractice2
         {
             string eyeNumber = base.ChangeEyeColorToInt();
             ChangeIntToBeach(eyeNumber);
+            Console.WriteLine("What size shoe are you?");
+            
+
             return beach;
+            
         }
 
         public string ChangeIntToBeach(string eyeNumber)
