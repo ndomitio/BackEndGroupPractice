@@ -18,14 +18,12 @@ namespace BackEndGroupPractice2
             RentalCar MyCar = new RentalCar();
 
             string beachChoice = NewBeach.ChangeEyeColorToInt();
-
-
-
+            
             double ShoeSize1 = double.Parse(Console.ReadLine());
 
-            double CarChoice1 = MyCar.TurnBeachtoInt(beachChoice, ShoeSize1);
 
-            Console.WriteLine("You are going to " + beachChoice + ", staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel and driving a " + MyCar.RentalCarType(CarChoice1));
+            Console.WriteLine("You are going to " + beachChoice + ", staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel and driving a " + MyCar.RentalCarType(MyCar.TurnBeachtoInt(beachChoice, ShoeSize1)));
+
 
 
 
