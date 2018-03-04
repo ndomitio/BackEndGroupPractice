@@ -11,17 +11,19 @@ namespace BackEndGroupPractice2
 
         static void Main(string[] args)
         {
-            //BeachDestination NewBeach = new BeachDestination(string.Empty);
+            BeachDestination NewBeach = new BeachDestination(string.Empty);
 
-            //Hotel MyHotel = new Hotel();
+            Hotel MyHotel = new Hotel();
 
-            //string beachChoice = NewBeach.ChangeEyeColorToInt();
+            string beachChoice = NewBeach.ChangeEyeColorToInt();
 
-            //double ShoeSize1 = double.Parse(Console.ReadLine());
 
-            //Console.WriteLine("You are going to " + beachChoice + " and staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel");
 
-            
+            double ShoeSize1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("You are going to " + beachChoice + " and staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel");
+
+
 
         }
     }
