@@ -15,13 +15,17 @@ namespace BackEndGroupPractice2
 
             Hotel MyHotel = new Hotel();
 
+            RentalCar MyCar = new RentalCar();
+
             string beachChoice = NewBeach.ChangeEyeColorToInt();
 
 
 
             double ShoeSize1 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("You are going to " + beachChoice + " and staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel");
+            double CarChoice1 = MyCar.TurnBeachtoInt(beachChoice, ShoeSize1);
+
+            Console.WriteLine("You are going to " + beachChoice + ", staying at the " + MyHotel.HotelPick(ShoeSize1, beachChoice) + " hotel and driving a " + MyCar.RentalCarType(CarChoice1));
 
 
 
