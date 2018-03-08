@@ -37,71 +37,81 @@ namespace BackEndGroupPractice2
         //methods
         public string RentalCarType(double carNum)
         {
-            if (carNum == 8.0)
+            if ((carNum % 2) == 0)
             {
                 carPick = "Toyota";
                 return carPick;
             }
-            if (carNum == 9.0)
+            if ((carNum % 3) == 0)
             {
                 carPick = "Honda";
                 return carPick;
             }
-            if (carNum == 10.0)
-            {
-                carPick = "Ford";
-                return carPick;
-            }
-            if (carNum == 11.0)
-            {
-                carPick = "BMW";
-                return carPick;
-            }
-            if (carNum == 12.0)
-            {
-                carPick = "Audi";
-                return carPick;
-            }
-            if (carNum == 13.0)
-            {
-                carPick = "Tesla";
-                return carPick;
-            }
-            if (carNum == 14.0)
-            {
-                carPick = "'77 Bronco";
-                return carPick;
-            }
-            if (carNum == 15.0)
-            {
-                carPick = "Jeep";
-                return carPick;
-            }
-            if (carNum == 16.0)
-            {
-                carPick = "Maserati";
-                return carPick;
-            }
-            if (carNum == 17.0)
-            {
-                carPick = "Lexus";
-                return carPick;
-            }
-            if (carNum == 18.0)
-            {
-                carPick = "Delorean";
-                return carPick;
-            }
-            if (carNum == 19.0)
-            {
-                carPick = "Pinto";
-                return carPick;
-            }
-            if (carNum == 20.0)
-            {
-                carPick = "Ferrari";
-                return carPick;
-            }
+            //if (carNum == 8.0)
+            //{
+            //    carPick = "Toyota";
+            //    return carPick;
+            //}
+            //if (carNum == 9.0)
+            //{
+            //    carPick = "Honda";
+            //    return carPick;
+            //}
+            //if (carNum == 10.0)
+            //{
+            //    carPick = "Ford";
+            //    return carPick;
+            //}
+            //if (carNum == 11.0)
+            //{
+            //    carPick = "BMW";
+            //    return carPick;
+            //}
+            //if (carNum == 12.0)
+            //{
+            //    carPick = "Audi";
+            //    return carPick;
+            //}
+            //if (carNum == 13.0)
+            //{
+            //    carPick = "Tesla";
+            //    return carPick;
+            //}
+            //if (carNum == 14.0)
+            //{
+            //    carPick = "'77 Bronco";
+            //    return carPick;
+            //}
+            //if (carNum == 15.0)
+            //{
+            //    carPick = "Jeep";
+            //    return carPick;
+            //}
+            //if (carNum == 16.0)
+            //{
+            //    carPick = "Maserati";
+            //    return carPick;
+            //}
+            //if (carNum == 17.0)
+            //{
+            //    carPick = "Lexus";
+            //    return carPick;
+            //}
+            //if (carNum == 18.0)
+            //{
+            //    carPick = "Delorean";
+            //    return carPick;
+            //}
+            //if (carNum == 19.0)
+            //{
+            //    carPick = "Pinto";
+            //    return carPick;
+            //}
+            //if (carNum == 20.0)
+            //{
+            //    carPick = "Ferrari";
+            //    return carPick;
+            //}
             else carPick = "Kia";
             return carPick;
         }
